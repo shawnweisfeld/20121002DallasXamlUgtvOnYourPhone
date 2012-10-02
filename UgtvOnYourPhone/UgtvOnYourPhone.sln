@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UgtvOnYourPhoneWeb", "UgtvO
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UgtvOnYourPhoneClient", "UgtvOnYourPhoneClient\UgtvOnYourPhoneClient.csproj", "{AD439D13-5B2B-464D-A974-8FA01F5F4DBE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UgtvOnYourPhoneCommon", "UgtvOnYourPhoneCommon\UgtvOnYourPhoneCommon.csproj", "{4C0F8A84-4B1C-4EF6-8F73-88533927B1E5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{AD439D13-5B2B-464D-A974-8FA01F5F4DBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AD439D13-5B2B-464D-A974-8FA01F5F4DBE}.Release|Any CPU.Build.0 = Release|Any CPU
 		{AD439D13-5B2B-464D-A974-8FA01F5F4DBE}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{4C0F8A84-4B1C-4EF6-8F73-88533927B1E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C0F8A84-4B1C-4EF6-8F73-88533927B1E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C0F8A84-4B1C-4EF6-8F73-88533927B1E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C0F8A84-4B1C-4EF6-8F73-88533927B1E5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

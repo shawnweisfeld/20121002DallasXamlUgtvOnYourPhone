@@ -11,6 +11,7 @@
     FontSize="{StaticResource PhoneFontSizeNormal}"
     Foreground="{StaticResource PhoneForegroundBrush}"
     SupportedOrientations="Portrait" Orientation="Portrait"
+    DataContext="{Binding Source={StaticResource Locator}, Path=Main}"
     shell:SystemTray.IsVisible="True">
 
     <!--LayoutRoot is the root grid where all page content is placed-->
@@ -27,7 +28,23 @@
         </StackPanel>
 
         <!--ContentPanel - place additional content here-->
-        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0"></Grid>
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <ListBox ItemsSource="{Binding Posts}" x:Name="PostsList">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch">
+                                <Button
+                                    CommandParameter="{Binding Mp4VideoLow}"
+                                    Command="{Binding ElementName=PostsList, Path=DataContext.WatchVideoCommand}">
+                                    <Image Source="{Binding Thumbnail}" Width="75" />
+                                </Button>
+                                <TextBlock Text="{Binding Title}" />
+                        </StackPanel>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+            
+        </Grid>
     </Grid>
  
     <!--Sample code showing usage of ApplicationBar-->

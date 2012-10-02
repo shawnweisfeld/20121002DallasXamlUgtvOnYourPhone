@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using UgtvOnYourPhoneWeb.Models;
 
 namespace UgtvOnYourPhoneWeb.Controllers
 {
@@ -18,6 +19,15 @@ namespace UgtvOnYourPhoneWeb.Controllers
         public ActionResult About()
         {
             return View();
+        }
+
+        public ActionResult GetData()
+        {
+            var json = new JsonResult();
+            json.JsonRequestBehavior = JsonRequestBehavior.AllowGet;
+            json.Data = PostHelper.GetFromDisk();
+
+            return json;
         }
     }
 }
